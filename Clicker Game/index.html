@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Click to the moon!</title>
+        <link href='style.css' rel='stylesheet'>
+        <script type='text/javascript' src='js/engine.js'></script>
+    </head>
+    <body>
+        <div class='title'>Click to the moon!</div>
+        <div class='subtitle'>The moon is 238,900 miles away. That's a lot of clicks. You better get started!</div>
+        <div class='container'>
+            <img id = 'moonimage' src = 'images/moon.png' alt='A large yellow moon' onclick="incrementCount()">
+            <div id='powerup'>Power up Activated!</div>
+            <table id = 'moonshop'>
+                <tr>
+                    <th>Item</th>
+                    <th>Effect</th>
+                    <th>Cost</th>
+                    <th class='buybutton' onclick='purchaseAll()'>Buy All</th>
+                </tr>
+                <tr>
+                    <td>Aerodynamic Pants</td>
+                    <td>+1 Click per Click</td>
+                    <td>200 Clicks</td>
+                    <td class='buybutton' id = 'pants' onclick='purchase(200, 1, 0, "pants")'>Buy</td>
+                </tr>
+                <tr>
+                    <td>Energy Drink</td>
+                    <td>+1 Click per Click</td>
+                    <td>800 Clicks</td>
+                    <td class='buybutton' id = 'gfuel' onclick='purchase(800, 1, 0, "gfuel")'>Buy</td>
+                </tr>
+                <tr>
+                    <td>Four Leaf Asteroid</td>
+                    <td>Power ups happen more often</td>
+                    <td>1200 Clicks</td>
+                    <td class='buybutton' id = 'luck' onclick='purchase(1200, 0, .002, "luck")'>Buy</td>
+                </tr>
+                <tr>
+                    <td>A Rocket</td>
+                    <td>Is a much better way to get to the moon.</td>
+                    <td>2500 Clicks</td>
+                    <td class='buybutton' id = 'rocket' onclick='purchase(2500, 0, .000, "rocket")'>Buy</td>
+                </tr>
+            </table>
+        </div>
+        <div id='counter'>Clicks: 0</div>
+        <div id='powerup'>Power up Activated!</div>
+        <a href="win.html" id='win'>Shh! No Cheating;)</a>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+body {
+    color: burlywood;
+}
+.title {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 35px;
+}
+.subtitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+#moonimage {
+    margin-top: 2%;
+    margin-left: 37.5%;
+    justify-content: flex-start;
+}
+
+#counter {
+    text-align: center;
+    font-size: 90px;
+}
+
+#powerup {
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+}
+
+#moonshop {
+    margin-top: 20px;
+    margin-left: auto;
+    align-self: flex-start;
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+th {
+    padding: 1px 2px;
+    border: burlywood 2px solid;
+    margin: 0;
+}
+
+td {
+    padding: 1px 2px;
+    border: burlywood 1px solid;
+}
+
+.buybutton {
+    border-radius: 15px;
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+}
+
+#win {
+    color: black;
+}
+
+#theMoon {
+    width: 100%;
+    height: 95%;
+}
+
+.wintext {
+    font-size: 140px;
+    position: absolute;
+    color: goldenrod;
+    left: 30%;
+    top: 40%;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+
+}
+
+.dubwin {
+    font-size: 75px;
+    position: absolute;
+    color: goldenrod;
+    left: 26%;
+    top: 59%;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
+
+}
+
+th {
+    background-color: burlywood;
+    color: black;
+}
